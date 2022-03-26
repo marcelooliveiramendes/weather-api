@@ -1,3 +1,5 @@
+import './style.module.css'
+
 export const CityInfo = ({city}) => {
     return(
         <div>

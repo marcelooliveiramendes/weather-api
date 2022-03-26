@@ -28,7 +28,7 @@ function App() {
   } 
 
   return (
-    <div className="App">
+    <div className="container">
       <input
          type='text' 
          onChange={event => setLocation(event.target.value)} 
@@ -37,7 +37,7 @@ function App() {
       />
 
       {weather.length !== 0 &&(
-        <div>
+        <div className='infoContent'>
           <CityInfo city={weather.name}/>
           <WeatherInfos props={weather}/>
 
