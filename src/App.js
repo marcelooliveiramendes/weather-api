@@ -39,7 +39,12 @@ function App() {
       />
   
 
+      {weather.length === 0 &&(
+        <div className='infoContent'>
+          A
 
+        </div>
+      )}  
       {weather.length !== 0 &&(
         <div className='infoContent'>
           <CityInfo city={weather.name}/>
