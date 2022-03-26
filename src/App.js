@@ -13,7 +13,8 @@ function App() {
   const [weather, setWeather] = useState([]);
   const [location, setLocation] = useState('');
 
-  const API_KEY = '6b8a5bd2aa5ef3f4ac10f6a89731e8f0';
+  const API_KEY = '';
+  //Put your API KEY here
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&lang=pt_br&appid=${API_KEY}&units=metric`
 
@@ -24,7 +25,10 @@ function App() {
           .then((response) => {
               setWeather(response.data)
           })
-          .catch((err) => {console.log('Falha na requisição \n\n\n' + err)})
+          .catch((err) => {
+            console.log('Falha na requisição \n\n\n' + err)
+            alert('Localização errada!')
+          })
       }
       setLocation('')
   } 
