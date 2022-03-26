@@ -19,4 +19,10 @@
 
 .infoContent{
   width: 50%;
+  height: 40%;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
