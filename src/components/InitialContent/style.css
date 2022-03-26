@@ -1,0 +1,14 @@
+.initialContent{
+    width: 500px;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+img{
+    width: 300px;
+}
