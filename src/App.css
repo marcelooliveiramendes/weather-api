@@ -10,11 +10,28 @@
 .container{
   width: 100vw;
   height: 100vh;
-  background-color: darkcyan;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.initialContent{
+  width: 30%;
+  height: 40%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.initialContent div{
+  width: 100%;
+}
+.initialContent img{
+  width: 300px;
+
 }
 
 .infoContent{

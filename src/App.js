@@ -5,6 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { CityInfo } from './components/CityInfos';
 import WeatherInfos from './components/WeatherInfos';
+import picture from './img/picture.svg'
 
 function App() {
   
@@ -40,9 +41,17 @@ function App() {
   
 
       {weather.length === 0 &&(
-        <div className='infoContent'>
-          A
+        <div className='initialContent'>
+          <div>
+            <h1>Weather API</h1>
+          </div>
+          <div>
+            <img src={picture} alt='img' />
+            <span>
+              Digite a localização
+            </span>
 
+          </div>
         </div>
       )}  
       {weather.length !== 0 &&(
