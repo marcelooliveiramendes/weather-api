@@ -29,12 +29,16 @@ function App() {
 
   return (
     <div className="container">
+    
       <input
-         type='text' 
-         onChange={event => setLocation(event.target.value)} 
-         onKeyPress={searchLocation}
-         placeholder="Enter Location"
+          type='text' 
+          className='searchInput'
+          onChange={event => setLocation(event.target.value)} 
+          onKeyPress={searchLocation}
+          placeholder="Enter Location"
       />
+  
+
 
       {weather.length !== 0 &&(
         <div className='infoContent'>
